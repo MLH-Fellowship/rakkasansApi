@@ -57,9 +57,10 @@ router.get('/:id', async (req, res, next) => {
 
 router.get('/:id/posts', async (req, res, next) => {
   const text = `
-    SELECT posts.*
-    FROM topics 
+    SELECT posts.*, users.*
+    FROM topics
     JOIN posts ON posts.topic_id = topics.id
+    JOIN users ON posts.user_id = users.id
     WHERE topics.id = $1
   `
   const values = [req.params.id]
