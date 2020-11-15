@@ -57,7 +57,7 @@ router.get('/:id', async (req, res, next) => {
 
 router.get('/:id/posts', async (req, res, next) => {
   const text = `
-    SELECT posts.*, users.*
+    SELECT posts.*, users.first_name, users.last_name, users.created_at
     FROM topics
     JOIN posts ON posts.topic_id = topics.id
     JOIN users ON posts.user_id = users.id

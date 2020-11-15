@@ -53,7 +53,7 @@ router.delete('/:id/', async (req, res, next) => {
 
   try {
     const data = await db.query('DELETE FROM posts WHERE id=$1', [id])
-    return res.json({message: "Post successfully deleted"})
+    return res.json({ message: "Post successfully deleted" })
   } catch (err) {
     console.log(err.stack)
   }
@@ -103,9 +103,10 @@ router.get('/:id', async (req, res, next) => {
 
 router.get('/:id/comments', async (req, res, next) => {
   const text = `
-    SELECT comments.*
+    SELECT comments.*, users.first_name, users.last_name
     FROM posts 
     JOIN comments ON comments.post_id = posts.id
+    JOIN users ON comments.user_id = users.id
     WHERE posts.id = $1
   `
   const values = [req.params.id]

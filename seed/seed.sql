@@ -60,7 +60,7 @@ INSERT INTO topics (title, user_id) VALUES
 
 INSERT INTO posts (title, body, user_id, topic_id) VALUES
   ('Thoughts on the future of AI?', 'Looks like machines are going to take over',1,1),
-  ('How long would you last in the wild alone?', 'I give myslef 2 weeks',2,1),
+  ('How long would you last in the wild alone?', 'I give myself 2 weeks',2,1),
   ('What is the most painful execise?', 'I think its pull ups.',4,2),
   ('To fast or not to fast', 'Studies say it can be really healthy. But its craazy',3,2),
   ('Knee Pain', 'Not sure how to approach squats with weak knees.',4,2),
@@ -74,5 +74,13 @@ INSERT INTO posts (title, body, user_id, topic_id) VALUES
   ('Where can I see all events coming up?', 'Is there a site or calendar?',1,6);
 
 INSERT INTO comments (content, user_id, parent_id, post_id) VALUES
-  ('No way! A proper squat is incredibly difficult', 1, null, 1),
-  ('Anthing with abs for me', 2, null, 1);
+  ('They already did. Its too late!!', 4, null, 1),
+  ('You should watch the movie Ex Machina', 1, null, 1),
+  ('It was pretty cool', 2, 2, 1),
+  ('Depends on the equipment really', 6, null, 2),
+  ('Depend on the evnvironment too', 3, 5, 2),
+  ('No way! A proper squat is incredibly difficult', 1, null, 3),
+  ('Anthing with abs for me', 2, null, 3),
+  ('Less food, more problems', 5, null, 4),
+  ('Only if you need to lose wieght really quickly', 1, null, 4),
+  ('Takes a ton of practice, but its amazing. You can see results really quickly.', 1, 8, 4);
