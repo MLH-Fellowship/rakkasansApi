@@ -55,7 +55,18 @@ CREATE TABLE IF NOT EXISTS
     campaign TEXT
   );
 
-\copy fallen(last_name, first_name, rank, date, battalion, unit, location, campaign) FROM '/docker-entrypoint-initdb.d/data.csv' DELIMITER ',' CSV
+\copy fallen(last_name, first_name, rank, date, battalion, unit, location, campaign) FROM '/docker-entrypoint-initdb.d/fallen_data.csv' DELIMITER ',' CSV
+
+CREATE TABLE IF NOT EXISTS
+  dmor_hmor (
+    id INT NOT NULL PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    last_name TEXT,
+    first_name TEXT,
+    rank TEXT,
+    date_accepted TEXT,
+    notes TEXT
+  );
+\copy dmor_hmor(last_name, first_name, rank, date_accepted, notes) FROM '/docker-entrypoint-initdb.d/dmor_hmor_data.csv' DELIMITER ',' CSV
 
 INSERT INTO users (first_name, last_name) VALUES
   ('Jason', 'Jackson'),
