@@ -8,6 +8,7 @@ var usersRouter = require('./routes/users');
 var postsRouter = require('./routes/posts');
 var topicsRouter = require('./routes/topics');
 var commentsRouter = require('./routes/comments');
+var fallenRouter = require('./routes/fallen');
 
 var app = express();
 
@@ -21,6 +22,8 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/posts', postsRouter);
 app.use('/topics', topicsRouter);
-// app.use('/comments', commentsRouter);
+app.use('/topics', topicsRouter);
+app.use('/comments', commentsRouter);
+app.use('/fallen', fallenRouter);
 
 module.exports = app;

@@ -42,6 +42,21 @@ CREATE TABLE IF NOT EXISTS
     post_id INT REFERENCES posts (id) NOT NULL
   );
 
+CREATE TABLE IF NOT EXISTS
+  fallen (
+    id INT NOT NULL PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    last_name TEXT,
+    first_name TEXT,
+    rank TEXT,
+    date DATE,
+    battalion TEXT,
+    unit TEXT,
+    location TEXT,
+    campaign TEXT
+  );
+
+\copy fallen(last_name, first_name, rank, date, battalion, unit, location, campaign) FROM '/docker-entrypoint-initdb.d/data.csv' DELIMITER ',' CSV
+
 INSERT INTO users (first_name, last_name) VALUES
   ('Jason', 'Jackson'),
   ('Chloe', 'Ward'),
