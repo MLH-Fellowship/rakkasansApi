@@ -68,6 +68,19 @@ CREATE TABLE IF NOT EXISTS
   );
 \copy dmor_hmor(last_name, first_name, rank, date_accepted, notes) FROM '/docker-entrypoint-initdb.d/dmor_hmor_data.csv' DELIMITER ',' CSV
 
+CREATE TABLE IF NOT EXISTS
+  battalion (
+    id INT NOT NULL PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+    batt_name TEXT NOT NULL UNIQUE,
+    shop_number INT,
+    location TEXT,
+    hours TEXT
+  );
+
+  INSERT INTO battalion (batt_name, shop_number, location, hours) VALUES
+    ('HHC', 1, 'Here', '12:00 - 15:00');
+
+
 INSERT INTO users (first_name, last_name) VALUES
   ('Jason', 'Jackson'),
   ('Chloe', 'Ward'),

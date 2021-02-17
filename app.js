@@ -10,6 +10,7 @@ var topicsRouter = require('./routes/topics');
 var commentsRouter = require('./routes/comments');
 var fallenRouter = require('./routes/fallen');
 var dmorHmorRouter = require('./routes/dmorHmor');
+const battalionRouter = require('./routes/battalion')
 
 var app = express();
 
@@ -27,5 +28,6 @@ app.use('/topics', topicsRouter);
 app.use('/comments', commentsRouter);
 app.use('/fallen', fallenRouter);
 app.use('/dmorHmor', dmorHmorRouter);
+app.use('/batallion' , battalionRouter)
 
 module.exports = app;
