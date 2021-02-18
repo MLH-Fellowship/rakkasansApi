@@ -28,6 +28,6 @@ app.use('/topics', topicsRouter);
 app.use('/comments', commentsRouter);
 app.use('/fallen', fallenRouter);
 app.use('/dmorHmor', dmorHmorRouter);
-app.use('/batallion' , battalionRouter)
+app.use('/battalion' , battalionRouter)
 
 module.exports = app;
