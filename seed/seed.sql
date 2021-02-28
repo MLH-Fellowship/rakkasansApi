@@ -86,6 +86,15 @@ CREATE TABLE IF NOT EXISTS
     shop_num INT NOT NULL
     );
 
+
+INSERT INTO shops (parent_batt, shop_num) VALUES
+  ('HHC', '1'),
+  ('HHC', '2'),
+  ('HHC', '3'),
+  ('HHC', '4'),
+  ('HHC', '5'),
+  ('HHC', '6');
+
 INSERT INTO users (first_name, last_name) VALUES
   ('Jason', 'Jackson'),
   ('Chloe', 'Ward'),

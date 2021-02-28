@@ -22,8 +22,8 @@ router.get('/:batt', async (req, res, next) => {
 
 router.get('/:batt/shops', async (req, res, next) => {
   const query = {
-    name: `fetch-battalion`,
-    text: `SELECT * FROM shops WHERE batt_name = $1`,
+    name: `fetch-battalion-shops`,
+    text: `SELECT * FROM shops WHERE parent_batt = $1`,
     values: [req.params.batt],
   }
 
