@@ -76,15 +76,15 @@ CREATE TABLE IF NOT EXISTS
     hours TEXT
   );
 
-  INSERT INTO battalion (batt_name, shop_number, location, hours) VALUES
-    ('HHC', 'Here', '12:00 - 15:00');
+INSERT INTO battalion (batt_name, location, hours) VALUES
+  ('HHC', 'Location', '12:00 - 15:00');
 
 CREATE TABLE IF NOT EXISTS
     shops (
     id INT NOT NULL PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     parent_batt TEXT NOT NULL,
     shop_num INT NOT NULL
-    )
+    );
 
 INSERT INTO users (first_name, last_name) VALUES
   ('Jason', 'Jackson'),
