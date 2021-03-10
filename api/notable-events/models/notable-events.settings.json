@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notable_events",
+  "info": {
+    "name": "Notable Events",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Description": {
+      "type": "text"
+    },
+    "Unit": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "string"
+    },
+    "Year": {
+      "type": "integer"
+    }
+  }
+}

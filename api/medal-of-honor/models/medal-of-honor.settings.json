@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "medal_of_honors",
+  "info": {
+    "name": "medal of honor",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Unit": {
+      "type": "string"
+    },
+    "Year": {
+      "type": "integer"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Conflict": {
+      "type": "string"
+    }
+  }
+}

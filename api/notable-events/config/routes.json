@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/notable-events",
+      "handler": "notable-events.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/notable-events/count",
+      "handler": "notable-events.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/notable-events/:id",
+      "handler": "notable-events.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/notable-events",
+      "handler": "notable-events.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/notable-events/:id",
+      "handler": "notable-events.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/notable-events/:id",
+      "handler": "notable-events.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

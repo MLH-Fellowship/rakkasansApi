@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/medal-of-honors",
+      "handler": "medal-of-honor.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/medal-of-honors/count",
+      "handler": "medal-of-honor.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/medal-of-honors/:id",
+      "handler": "medal-of-honor.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/medal-of-honors",
+      "handler": "medal-of-honor.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/medal-of-honors/:id",
+      "handler": "medal-of-honor.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/medal-of-honors/:id",
+      "handler": "medal-of-honor.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
