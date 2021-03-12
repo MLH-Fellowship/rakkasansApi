@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resources",
+  "info": {
+    "name": "Resources",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "phone_number": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "report_times": {
+      "type": "string"
+    },
+    "grad_times": {
+      "type": "string"
+    },
+    "resource_title": {
+      "type": "string"
+    },
+    "resource_type": {
+      "type": "string"
+    },
+    "icon_name": {
+      "type": "string"
+    }
+  }
+}

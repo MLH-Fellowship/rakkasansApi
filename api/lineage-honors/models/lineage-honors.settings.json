@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lineage_honors",
+  "info": {
+    "name": "Lineage Honors"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lineage-honors",
+      "handler": "lineage-honors.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lineage-honors/count",
+      "handler": "lineage-honors.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lineage-honors/:id",
+      "handler": "lineage-honors.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lineage-honors",
+      "handler": "lineage-honors.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lineage-honors/:id",
+      "handler": "lineage-honors.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lineage-honors/:id",
+      "handler": "lineage-honors.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
