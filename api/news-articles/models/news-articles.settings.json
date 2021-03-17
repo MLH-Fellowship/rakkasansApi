@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "news_articles",
   "info": {
-    "name": "News Articles"
+    "name": "News Articles",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,13 +11,13 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Content": {
+    "content": {
       "type": "text"
     },
-    "Image": {
+    "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
