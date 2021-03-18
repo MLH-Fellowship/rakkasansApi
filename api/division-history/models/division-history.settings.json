@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "division_histories",
+  "info": {
+    "name": "Division History",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Description": {
+      "type": "string"
+    }
+  }
+}

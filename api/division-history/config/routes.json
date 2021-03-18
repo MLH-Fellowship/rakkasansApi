@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/division-histories",
+      "handler": "division-history.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/division-histories/count",
+      "handler": "division-history.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/division-histories/:id",
+      "handler": "division-history.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/division-histories",
+      "handler": "division-history.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/division-histories/:id",
+      "handler": "division-history.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/division-histories/:id",
+      "handler": "division-history.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
