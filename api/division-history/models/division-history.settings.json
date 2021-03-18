@@ -12,7 +12,7 @@
   },
   "attributes": {
     "Description": {
-      "type": "string"
+      "type": "text"
     }
   }
 }
