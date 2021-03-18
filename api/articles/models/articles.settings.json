@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "news_articles",
+  "collectionName": "articles",
   "info": {
-    "name": "News Articles",
+    "name": "Articles",
     "description": ""
   },
   "options": {
@@ -18,7 +18,7 @@
       "type": "text"
     },
     "image": {
-      "model": "file",
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images",
