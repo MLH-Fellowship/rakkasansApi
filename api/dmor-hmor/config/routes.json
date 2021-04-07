@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dmor-hmors",
+      "handler": "dmor-hmor.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dmor-hmors/count",
+      "handler": "dmor-hmor.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dmor-hmors/:id",
+      "handler": "dmor-hmor.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dmor-hmors",
+      "handler": "dmor-hmor.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dmor-hmors/:id",
+      "handler": "dmor-hmor.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dmor-hmors/:id",
+      "handler": "dmor-hmor.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

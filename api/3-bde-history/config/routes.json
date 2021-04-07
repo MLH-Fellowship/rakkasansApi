@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/3-bde-histories",
+      "handler": "3-bde-history.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/3-bde-histories/count",
+      "handler": "3-bde-history.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/3-bde-histories/:id",
+      "handler": "3-bde-history.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/3-bde-histories",
+      "handler": "3-bde-history.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/3-bde-histories/:id",
+      "handler": "3-bde-history.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/3-bde-histories/:id",
+      "handler": "3-bde-history.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

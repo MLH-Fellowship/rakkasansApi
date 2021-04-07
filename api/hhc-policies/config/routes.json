@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hhc-policies",
+      "handler": "hhc-policies.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hhc-policies/count",
+      "handler": "hhc-policies.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/hhc-policies/:id",
+      "handler": "hhc-policies.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/hhc-policies",
+      "handler": "hhc-policies.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hhc-policies/:id",
+      "handler": "hhc-policies.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hhc-policies/:id",
+      "handler": "hhc-policies.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
